@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Background Login Screen</title>
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text">
+        <div class="title login">Login form</div>
+        <div class="title Signup">Signup form</div>
+    </div>
+    <div class="f-container">
+        <div class="s-control">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="/log" class="login" method="POST">
+                <div class="field">
+                    <input type="text" placeholder="Email Address" name="Email"  required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" name="Password_u">
+                </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                <div class="line"></div>
+                <div class="medi">
+                  <a href="#" class="google">
+                    <box-icon name='google-plus' type='logo' color='blue' class="google-icone" >   </box-icon>
+                    <span>.  .login with google</span>
+                  </a>
+                </div>
+            </form>
+            <form action="/sign" class="signup" method="POST">
+                <div class="field">
+                  <input type="text" placeholder="Email Address" name="Email" required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Password" name="Password_u" required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Confirm password" name="conf" required>
+                </div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup">
+                </div>
+              </form>
+        </div>
+    </div>
+</div>
+<div id="particles-js"></div>
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+<script  src="./script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

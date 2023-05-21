@@ -1,0 +1,20 @@
+
+body{
+    background-color: rgb(201, 173, 173);
+    place-items: center;
+}
+.aa{
+    overflow: hidden;
+    max-width: 390px;
+    background: rgba(51, 60, 87, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 999;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    background-color: #fff;
+}
